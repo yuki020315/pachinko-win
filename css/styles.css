@@ -1,0 +1,140 @@
+@media screen and (max-width: 640px) {
+
+
+  /* common */
+  h1,
+  h2 {
+    font-weight: normal;
+    font-size: 20px;
+  }
+  
+
+  ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header,
+  main,
+  footer {
+    margin-right: 10px;
+    margin-left: 10px;
+    line-height: 25px;
+  }
+
+  header li {
+    margin-bottom: 8px;
+  }
+  
+  h2 {
+    margin: 24px, 0;
+  }
+
+  a,
+  a:visited,
+  a:hover,
+  a:active {
+  color: inherit;
+}
+
+  
+  /* header */
+
+  header {
+    text-align: center;
+  }
+
+  header > h1 {
+    margin-top: 30px;
+    border-bottom: 5px solid rgba(200, 100, 0, 0.5);
+  }
+  
+  header .border {
+    border: 1px solid;
+    border-radius: 10%;
+    margin: 30px 50px;
+    background-color: #f4f4f4;
+  }
+
+  header #comment {
+  position: fixed;
+  padding: 10px;
+  margin-left: 40px;
+  bottom: 30px; 
+  right: 10px;
+  border: 3px solid #d8d8d8;
+  border-radius: 10px;
+  background: #f9f9f9;
+
+  animation: popup 5s forwards;
+  }
+  
+  @keyframes popup {
+    0% {
+      transform: translateY(20px);
+      opacity: 0;
+      animation-timing-function: ease-out;
+    }
+    20%, 80% {
+      transform: none;
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+  }
+
+  
+  /* main */
+
+  main .block img {
+    display: block;
+  }
+
+  main .container{
+    display: flex;
+  }
+
+  main h2 {
+    padding-left: 10px;
+    background-color: #f4f4f4;
+    padding: 15px;
+  }
+
+  main .padding {
+    padding-left: 8px;
+  }
+
+  main .red{
+    border-left: 8px solid rgba(255, 0, 0, 0.5);
+  }
+
+  main .blue{
+    border-left: 8px solid rgba(0, 0, 255, 0.5)
+  }
+
+  main .green{
+    border-left: 8px solid rgba(0, 255, 0, 0.5);
+  }
+
+  main .yellow{
+    border-left: 8px solid rgba(255, 255, 0, 0.5);
+  }
+
+  main span {
+    border-bottom: 2px solid rgba(255, 166, 0, 0.5);
+  }
+
+  /* footer */
+
+  footer .nav {
+  position: fixed;
+  padding: 10px;
+  bottom: 30px; 
+  right: 10px;
+  background-color: #f4f4f4;
+  }
+
+}
