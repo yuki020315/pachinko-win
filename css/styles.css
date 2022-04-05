@@ -129,6 +129,10 @@
 
   /* footer */
 
+  footer {
+    margin-bottom: 50px;
+  }
+
   footer .nav {
   position: fixed;
   padding: 10px;
